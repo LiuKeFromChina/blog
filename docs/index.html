@@ -1,33 +1,93 @@
 ---
 layout: home
-title: 刘柯的技术世界
+title: 刘珂的技术博客
 ---
 
-<div class="hero-banner">
-  <div class="hero-content">
-    <h1 class="hero-title">探索技术与创新</h1>
-    <p class="hero-subtitle">分享编程经验、科技新闻与个人见解</p>
-    <a href="#featured-posts" class="hero-button">浏览文章</a>
+<!-- 现代化英雄区域 -->
+<div class="hero-section">
+  <div class="hero-overlay"></div>
+  <div class="hero-container">
+    <div class="hero-text">
+      <h1 class="animate-title">代码 · 创意 · 未来</h1>
+      <p class="animate-subtitle">一个关于软件开发、人工智能与创新思考的技术空间</p>
+      <div class="hero-buttons">
+        <a href="#recent-posts" class="primary-button">最新文章</a>
+        <a href="/about/" class="secondary-button">了解更多</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="code-container">
+        <pre class="code-animation"><code><span class="keyword">function</span> <span class="function">welcome</span>() {
+  <span class="keyword">const</span> <span class="variable">visitor</span> = <span class="string">"you"</span>;
+  <span class="keyword">const</span> <span class="variable">blog</span> = {
+    <span class="property">author</span>: <span class="string">"刘珂"</span>,
+    <span class="property">topics</span>: [
+      <span class="string">"编程"</span>,
+      <span class="string">"AI"</span>,
+      <span class="string">"技术"</span>
+    ],
+    <span class="property">goal</span>: <span class="string">"分享与成长"</span>
+  };
+  
+  <span class="keyword">return</span> <span class="string">`欢迎 ${visitor} 探索我的世界!`</span>;
+}</code></pre>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="welcome-section">
-  <div class="welcome-avatar">
-    <img src="/assets/img/avatar.jpg" alt="Liu Ke">
-  </div>
-  <div class="welcome-text">
-    <h2>👋 欢迎来到我的博客</h2>
-    <p>我是<strong>刘珂</strong>，一名热爱技术的软件工程师。在这里，我将分享我在编程、人工智能和软件开发领域的经验与思考。</p>
-    <p>通过这个博客，我希望能够与志同道合的朋友们交流学习，共同进步。</p>
-    <div class="welcome-stats">
-      <div class="stat">
-        <span class="stat-number">{{ site.posts.size }}</span>
-        <span class="stat-label">博客文章</span>
+<!-- 关于我区域 -->
+<div class="about-me-section">
+  <div class="about-content">
+    <div class="profile-card">
+      <div class="profile-image">
+        <img src="/assets/img/avatar.jpg" alt="刘珂">
+        <div class="profile-status">
+          <span class="status-dot"></span>
+          开源爱好者
+        </div>
       </div>
-      <div class="stat">
-        <span class="stat-number">{{ site.tags.size }}</span>
-        <span class="stat-label">标签分类</span>
+      <div class="profile-info">
+        <h2>刘珂 <span class="name-pronunciation">Liu Ke</span></h2>
+        <p class="profile-title">全栈开发工程师 & AI 研究者</p>
+        <div class="profile-tags">
+          <span>Python</span>
+          <span>JavaScript</span>
+          <span>DevOps</span>
+          <span>机器学习</span>
+        </div>
       </div>
     </div>
+    
+    <div class="about-description">
+      <p>我热衷于探索技术的边界，创造有价值的数字体验。作为一名软件工程师，我专注于将复杂问题简化为优雅解决方案。</p>
+      <p>这个博客是我分享技术见解、项目经验和学习心得的地方。无论你是经验丰富的开发者还是技术新手，希望这里的内容能给你带来启发。</p>
+      
+      <div class="blog-stats">
+        <div class="stat-card">
+          <div class="stat-icon">📝</div>
+          <div class="stat-number">{{ site.posts.size }}</div>
+          <div class="stat-label">博客文章</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🔖</div>
+          <div class="stat-number">{{ site.tags.size }}</div>
+          <div class="stat-label">主题标签</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">📚</div>
+          <div class="stat-number">{{ site.categories.size }}</div>
+          <div class="stat-label">分类专题</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 特色内容区域 -->
+<div class="featured-section" id="recent-posts">
+  <h2 class="section-title">探索文章 <span class="title-accent">精选内容</span></h2>
+  <div class="feature-divider">
+    <span class="divider-icon">✦</span>
   </div>
 </div>
