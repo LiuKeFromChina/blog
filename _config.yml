@@ -3,168 +3,102 @@
 # Import the theme
 theme: jekyll-theme-chirpy
 
-# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
-# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
-# otherwise, the layout language will use the default value of 'en'.
-lang: en
+# The language of the site layout
+lang: zh-CN
 
-# Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
+# Change to your timezone
 timezone: Asia/Shanghai
 
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-# ↓ --------------------------
+# Change to your site title
+title: 刘珂的技术博客
 
-title: Chirpy # the main title
+# Change to your tagline
+tagline: 探索技术与创新
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+# Change to your description
+description: >-
+  刘珂的个人技术博客，分享编程经验、科技新闻与个人见解。
 
-description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
-
-# Fill in the protocol & hostname for your site.
-# E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
-
-github:
-  username: github_username # change to your GitHub username
-
-twitter:
-  username: twitter_username # change to your Twitter username
-
-social:
-  # Change to your full name.
-  # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+# Your name to show in the footer
+author:
+  name: 刘珂
+  email: your-email@example.com             # 填写您的邮箱
   links:
-    # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    # The links to your social media accounts
+    - https://github.com/LiuKeFromChina     # 您的 GitHub 账户
+    # Uncomment and add more links as needed
+    # - https://twitter.com/username         # Twitter
+    # - https://www.linkedin.com/in/username # LinkedIn
 
-# Site Verification Settings
-webmaster_verifications:
-  google: # fill in your Google verification code
-  bing: # fill in your Bing verification code
-  alexa: # fill in your Alexa verification code
-  yandex: # fill in your Yandex verification code
-  baidu: # fill in your Baidu verification code
-  facebook: # fill in your Facebook verification code
+# Change to your GitHub username
+github:
+  username: LiuKeFromChina
 
-# ↑ --------------------------
-# The end of `jekyll-seo-tag` settings
+# Change to your custom domain (留空或设置为您的自定义域名)
+url: "https://liuke96.cn"
 
-# Web Analytics Settings
-analytics:
-  google:
-    id: # fill in your Google Analytics ID
-  goatcounter:
-    id: # fill in your GoatCounter ID
-  umami:
-    id: # fill in your Umami ID
-    domain: # fill in your Umami domain
-  matomo:
-    id: # fill in your Matomo ID
-    domain: # fill in your Matomo domain
-  cloudflare:
-    id: # fill in your Cloudflare Web Analytics token
-  fathom:
-    id: # fill in your Fathom Site ID
-
-# Page views settings
-pageviews:
-  provider: # now only supports 'goatcounter'
-
-# Prefer color scheme setting.
-#
-# Note: Keep empty will follow the system prefer color by default,
-# and there will be a toggle to switch the theme between dark and light
-# on the bottom left of the sidebar.
-#
-# Available options:
-#
-#     light — Use the light color scheme
-#     dark — Use the dark color scheme
-#
-theme_mode: # [light | dark]
-
-# The CDN endpoint for media resources.
-# Notice that once it is assigned, the CDN url
-# will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
-#
-# e.g. 'https://cdn.com'
-cdn: "https://chirpy-img.netlify.app"
-
-# the avatar on sidebar, support local or CORS resources
-avatar: "/commons/avatar.jpg"
-
-# The URL of the site-wide social preview image used in SEO `og:image` meta tag.
-# It can be overridden by a customized `page.image` in front matter.
-social_preview_image: # string, local or CORS resources
-
-# boolean type, the global switch for TOC in posts.
-toc: true
-
-comments:
-  # Global switch for the post-comment system. Keeping it empty means disabled.
-  provider: # [disqus | utterances | giscus]
-  # The provider options are as follows:
-  disqus:
-    shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-  # utterances settings › https://utteranc.es/
-  utterances:
-    repo: # <gh-username>/<repo>
-    issue_term: # < url | pathname | title | ...>
-  # Giscus options › https://giscus.app
-  giscus:
-    repo: # <gh-username>/<repo>
-    repo_id:
-    category:
-    category_id:
-    mapping: # optional, default to 'pathname'
-    strict: # optional, default to '0'
-    input_position: # optional, default to 'bottom'
-    lang: # optional, default to the value of `site.lang`
-    reactions_enabled: # optional, default to the value of `1`
-
-# Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
-assets:
-  self_host:
-    enabled: # boolean, keep empty means false
-    # specify the Jekyll environment, empty means both
-    # only works if `assets.self_host.enabled` is 'true'
-    env: # [development | production]
-
-pwa:
-  enabled: true # The option for PWA feature (installable)
-  cache:
-    enabled: true # The option for PWA offline cache
-    # Paths defined here will be excluded from the PWA cache.
-    # Usually its value is the `baseurl` of another website that
-    # shares the same domain name as the current website.
-    deny_paths:
-      # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
-
-paginate: 10
-
-# The base URL of your site
+# 如果站点不是部署在域名根路径，而是子目录，则设置 baseurl
 baseurl: ""
 
-# ------------ The following options are not recommended to be modified ------------------
+# ------ 以下是搜索引擎优化和社交媒体设置 ------
+
+# 如果需要，添加 Google Analytics ID
+google_analytics:
+  id: # 您的 Google Analytics ID
+  # Google Analytics 页面视图报告设置
+  pv:
+    proxy_endpoint:   # 填入自托管代理 Google Analytics API 的 URL
+    cache_path:       # 缓存存储的路径
+
+# 填入网站评论系统的设置（可选）
+comments:
+  active:         # 评论系统："disqus", "utterances", "giscus"
+  # active: disqus
+  disqus:
+    shortname:    # 填入 Disqus shortname
+  # active: utterances
+  utterances:
+    repo:         # GitHub 仓库格式 "owner/repo"
+    issue_term:   # "pathname" (默认), "url", "title", "og:title"
+  # active: giscus
+  giscus:
+    repo:             # GitHub 仓库格式 "owner/repo"
+    repo_id:          # 仓库 ID
+    category:         # 评论分类
+    category_id:      # 分类 ID
+    mapping:          # "pathname" (默认), "url", "title", "og:title"
+    input_position:   # "top" (默认) 或 "bottom"
+    lang:             # "zh-CN" 语言设置
+
+# 自行托管静态资源
+assets:
+  self_host:
+    enabled:      # 布尔值，是否启用
+    # 指定 CSS 和 JS 的版本
+    env:          # [development|production]
+
+pwa:
+  enabled: true   # 是否启用 PWA 支持
+
+paginate: 10      # 每页显示的文章数量
+
+# ------------ 以下设置通常保持默认 ------------
 
 kramdown:
-  footnote_backlink: "&#8617;&#xfe0e;"
   syntax_highlighter: rouge
-  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
+  syntax_highlighter_opts:   # Rouge Options
     css_class: highlight
-    # default_lang: console
-    span:
-      line_numbers: false
-    block:
-      line_numbers: true
-      start_line: 1
+    # 默认行号不启用
+    # 如果您想启用行号，可以在此处设置
+    # line_numbers: true
+    # 如果您不希望显示行号，可以将其设置为 false
+    # line_numbers: false
+    # 如果您不希望在渲染的 Markdown 中显示行号，但希望在网页上显示行号
+    # 可以使用行号表策略（如 "table" 或 "inline"）
+    # line_numbers: true
+    # line_number_start: 1
+    # line_number_anchors: false
+    # line_number_style: "inline"
 
 collections:
   tabs:
@@ -173,25 +107,27 @@ collections:
 
 defaults:
   - scope:
-      path: "" # An empty string here means all files in the project
+      path: ""          # 任意文件
       type: posts
     values:
       layout: post
-      comments: true # Enable comments in posts.
-      toc: true # Display TOC column in posts.
-      # DO NOT modify the following parameter unless you are confident enough
-      # to update the code of all other post links in this project.
-      permalink: /posts/:title/
+      comments: true    # 在文章上启用评论
+      toc: true         # 显示目录
+      # 在文章的社交预览中不显示复制按钮
+      addons:
+        - popup
+        - sharing
   - scope:
       path: _drafts
     values:
       comments: false
   - scope:
       path: ""
-      type: tabs # see `site.collections`
+      type: tabs             # 选项卡页面
     values:
       layout: page
       permalink: /:title/
+      dynamic_title: true    # 隐藏标题
 
 sass:
   style: compressed
@@ -212,9 +148,8 @@ exclude:
   - tools
   - README.md
   - LICENSE
-  - purgecss.js
   - rollup.config.js
-  - "package*.json"
+  - package*.json
 
 jekyll-archives:
   enabled: [categories, tags]
