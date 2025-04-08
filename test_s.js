@@ -36,14 +36,6 @@ loaded(async (params, done) => {
       });
       await utils.waitForMilliseconds(300);
 
-      // 设置序列号
-      await page.evaluateHandle(() => {
-        const field = document.getElementById('serialNumberField_lto5bkpo');
-        const input = field.querySelector('input');
-        input.value = "RDLPC202504081274";
-        input.dispatchEvent(new Event('input', { bubbles: true }));
-      });
-      await utils.waitForMilliseconds(300);
 
       // 设置复选框值
       await page.evaluateHandle(() => {
@@ -54,34 +46,6 @@ loaded(async (params, done) => {
       });
       await utils.waitForMilliseconds(300);
 
-      // 设置员工字段（使用ID）
-      const employeeFields = {
-        'employeeField_m2pzivbh_id': ['042744604021489857'],
-        'employeeField_m2pzivbf_id': ['186604522'],
-        'employeeField_m7itpyri_id': ['063738621021042954'],
-        'employeeField_m2ylu0j5_id': ['186604522'],
-        'employeeField_lxmwur5y_id': ['01156649684437924223'],
-        'employeeField_luqehgnj_id': ['2069592136560241'],
-        'employeeField_lto17udb_id': ['216222451820762072'],
-        'employeeField_m78hmw6x_id': ['01063647582625925099'],
-        'employeeField_m2pzivbg_id': ['426247702']
-      };
-
-      // 遍历设置所有员工字段
-      for (const [fieldId, values] of Object.entries(employeeFields)) {
-        await page.evaluateHandle(({fieldId, values}) => {
-          const field = document.getElementById(fieldId);
-          if (field) {
-            const input = field.querySelector('input');
-            if (input) {
-              input.value = values;
-              input.dispatchEvent(new Event('input', { bubbles: true }));
-              input.dispatchEvent(new Event('change', { bubbles: true }));
-            }
-          }
-        }, {fieldId, values});
-        await utils.waitForMilliseconds(300);
-      }
 
       // 设置项目选择
       await page.evaluateHandle(() => {
